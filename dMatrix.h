@@ -75,8 +75,6 @@ private:
     size_t InvalidValueArray(const std::vector<std::vector<T>>& arr);
 
     int coeff(size_t i, size_t j) const {if((i+j)%2 == 0) return 1; else return -1;}
-
-    class ThreadConntroller;
 };
 
 
@@ -471,6 +469,3 @@ size_t Matrix<T>::InvalidValueArray(const std::vector<std::vector<T>>& arr)
     return currentSizeArr;
 }
 
-template<typename T>
-class Matrix<T>::ThreadConntroller{
-};
